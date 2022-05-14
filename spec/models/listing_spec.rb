@@ -142,6 +142,7 @@ describe Listing do
           neighborhood: santa_monica,
           host: user)
         expect(user.reload.host?).to eq(true)
+        
       end
     end
 
@@ -208,6 +209,7 @@ describe Listing do
           price: "150.00", 
           neighborhood: santa_monica, 
           host: user) } 
+        
 
       it 'changes host status to false' do 
         expect(user.host).to eq(true)
